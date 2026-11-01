@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+
+@import "../../../packages/ui-tokens/src/tokens.css";
+
+@theme {
+  --color-surface-page: var(--surface-page);
+  --color-surface-card: var(--surface-card);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-action-primary: var(--action-primary);
+  --color-action-hover: var(--action-hover);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-control: var(--border-control);
+  --color-focus-ring: var(--focus-ring);
+  --color-danger: var(--danger);
+  --color-warning-text: var(--warning-text);
+  --color-warning-surface: var(--warning-surface);
+}

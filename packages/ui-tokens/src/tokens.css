@@ -1,0 +1,14 @@
+:root {
+  --surface-page: #F7F5F0;
+  --surface-card: #FFFFFF;
+  --text-primary: #202923;
+  --text-secondary: #536158;
+  --action-primary: #254D3B;
+  --action-hover: #173B2B;
+  --border-subtle: #D4D8D2;
+  --border-control: #6B786E;
+  --focus-ring: #1459B5;
+  --danger: #9B2727;
+  --warning-text: #704500;
+  --warning-surface: #FFF4D6;
+}
