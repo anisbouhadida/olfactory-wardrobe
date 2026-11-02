@@ -1,5 +1,16 @@
 # Project documentation
 
+Development guidance:
+
+- [Engineering and feature workflow](development/engineering-workflow.md): global and installed explicit-only skills, GitHub Issues preference, test boundaries and delivery stages.
+- [Codex workflow](development/codex-workflow.md): scope, source precedence, implementation, verification, and handoff.
+- [UI/UX and motion workflow](development/ui-ux-motion-workflow.md): audited global skills, invocation ownership, Angular/Tailwind implementation and verification.
+- [Motion-policy proposal](proposals/motion-policy.md): draft input for the upcoming design-spec revision; not active policy.
+- [Relevant skills](development/skills.md): task triggers, repository-local Prisma skills, host skills, and availability limits.
+- [NestJS skill review](development/nestjs-skill.md): relevance, project adaptations, and scoped use of the community best-practices skill.
+- [Angular AI development](development/angular-ai.md): official Angular skill, version-aware guidance, and project-scoped CLI MCP setup.
+- [AI development readiness assessment](development/ai-readiness.md): findings and verification snapshot from 2 November 2026.
+
 Core specs (single source of truth):
 
 - [01 — Product requirements](specs/01-product-requirements.md) and [its update](specs/01-product-requirements-updated.md)

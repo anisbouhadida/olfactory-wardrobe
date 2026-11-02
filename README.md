@@ -15,7 +15,7 @@ Use Node.js 24.21.0 (`.node-version`) and pnpm 12.6.0.
 
 ```sh
 pnpm install
-cp .env.example apps/api/.env
+test -f apps/api/.env || cp .env.example apps/api/.env
 docker compose up -d db
 pnpm --filter api exec prisma generate
 pnpm dev

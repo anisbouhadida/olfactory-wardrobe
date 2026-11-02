@@ -1,59 +1,19 @@
 # Web
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Angular standalone SPA with Tailwind CSS v4 and shared semantic tokens. The current UI is the Angular starter; application routes, Supabase sessions and generated API client are pending.
 
-## Development server
+Use the [root setup](../../README.md) and [web agent guidance](AGENTS.md). Run commands from the repository root:
 
-To start a local development server, run:
-
-```bash
-ng serve
+```sh
+pnpm dev:web
+pnpm --filter web test --watch=false
+pnpm --filter web build
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The development server uses port 4200. Production output is under `apps/web/dist/web/`. Tailwind configuration lives in `src/styles.css`; shared colors live in `packages/ui-tokens/src/tokens.css` from the repository root.
 
-## Code scaffolding
+Tests use Angular CLI/Vitest. Root `pnpm lint` covers web TypeScript, not HTML templates or CSS. Browser E2E and automated accessibility checks are not configured; `ng e2e` is not an available project target.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Follow the [design and flow specifications](../../docs/README.md) when replacing the starter. Use Tailwind rather than older Bootstrap/SCSS examples in the design supplements.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+For AI-assisted Angular development, follow the [official Angular skill and CLI MCP setup](../../docs/development/angular-ai.md). The project-scoped MCP configuration uses the installed CLI; reconnect the client after setup.

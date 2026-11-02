@@ -1,0 +1,4 @@
+# Use this workspace's installed Angular CLI, with apps/web as its working directory.
+[mcp_servers.angular-cli]
+command = "pnpm"
+args = ["--filter", "web", "exec", "ng", "mcp"]

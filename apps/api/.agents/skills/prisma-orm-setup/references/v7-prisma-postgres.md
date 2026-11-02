@@ -1,6 +1,6 @@
 # Prisma Postgres with Prisma ORM 7
 
-Use this reference for an existing or explicitly selected **Prisma ORM 7** app. Obtain or reuse the database through [prisma-postgres-setup](../../prisma-postgres-setup/SKILL.md).
+Use this reference for an existing or explicitly selected **Prisma ORM 7** app. Obtain or reuse the database through [prisma-postgres-setup](https://github.com/prisma/skills/blob/main/prisma-postgres-setup/SKILL.md).
 
 ## Node.js connections
 
