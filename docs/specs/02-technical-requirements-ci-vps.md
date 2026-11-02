@@ -21,7 +21,7 @@
   - Trigger Coolify deployment via webhook or API only after tests and image push succeed.[229][232]
 
 - Coolify configuration:
-  - For `fc-api` and `fc-web`, use **Docker Image** application type (not Git build) pointing to the published image.[229][231]
+  - For `ow-api` and `ow-web`, use **Docker Image** application type (not Git build) pointing to the published image.[229][231]
   - In Coolify, avoid enabling “Build server fallback” on the 1-core VPS; if you must build on the VPS, expect slow builds and possible dashboard unresponsiveness.[231][220]
 
 ### 8.3 Resource limits and monitoring
@@ -50,8 +50,8 @@ GitHub repo
        ├─ test + build images
        └─ push to GHCR
              └─ Coolify (Hostinger VPS, 1 core / 4 GB)
-                  ├─ fc-api (Docker Image from GHCR)
-                  ├─ fc-web (Docker Image or static assets from GHCR)
+                  ├─ ow-api (Docker Image from GHCR)
+                  ├─ ow-web (Docker Image or static assets from GHCR)
                   ├─ supabase (one-click service)
                   ├─ uptime-kuma (one-click service)
                   └─ umami (one-click service)
